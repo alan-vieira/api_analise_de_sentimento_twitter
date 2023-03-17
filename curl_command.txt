@@ -1,0 +1,9 @@
+# envio da lista de trends para a api
+curl.exe --location --request POST 'http://127.0.0.1:5000/tweets' --header 'Content-Type: applic
+ation/json' --data-raw '{"lista":["python","javascript", "sql"]}'
+
+# consulta de tweets na api
+curl.exe http://127.0.0.1:5000/tweets
+
+# limpeza do banco de dados
+curl.exe -X "DELETE" http://127.0.0.1:5000/tweets
